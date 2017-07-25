@@ -1,0 +1,38 @@
+.all_goods{
+  width: 100%;
+  flex: 1;
+}
+
+.all_goods .goods{
+  width: 80%;
+  min-width: 960px;
+  margin: 0 auto;
+}
+
+.goods li{
+  display: inline-block;
+  position: relative;
+  width: 22%;
+  min-height: 60px; 
+  margin: 6px 1%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
+}
+
+.goods img{
+  height: 100%;
+  width: 100%;
+}
+.goods .title,.goods .price{
+  position: absolute;
+  color: #fff;
+}
+.goods .title{
+  left: 6px;
+  bottom:4px;
+}
+.goods .price{
+  right: 6px;
+  bottom: 4px;
+}

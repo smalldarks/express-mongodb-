@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>website</title>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/public.css">
+  </head>
+  <body>
+  <div class="wrap">
+    <%include ./components/header.ejs %>
+
+    <div class="all_goods">
+      <ul class="goods">
+      <% goods.forEach(function(item) {%>
+        <li>
+          <img src="<%= item.url %>">
+          <span class="title"><%= item.title %></span>
+          <span class="price"><%= item.price %></span>
+        </li>
+      <%}) %>
+      </ul>
+    </div>
+
+    <%include ./components/footer.ejs %>
+  </div>
+  </body>
+</html>

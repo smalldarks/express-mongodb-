@@ -1,0 +1,83 @@
+body,html{
+  height: 100%;
+}
+
+.wrap{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: url(/img/bg.png) repeat;
+  overflow: auto;
+}
+
+.header{
+  width: 100%;
+  height: 120px;
+  line-height: 160px;
+  background-image: url(/img/bird.png),url(/img/word.png);
+  background-repeat: no-repeat no-repeat;
+  background-position: left center, right center;
+  background-size: auto 100%;
+  text-align: center;
+}
+.header li{
+  display: inline-block;
+  margin:0 12px;
+}
+.header li:last-clild{
+  margin-left: 30px;
+}
+
+.footer{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 6px; 
+  background: #ccc;
+  text-align: center;
+}
+.footer li{
+  display: inline-block;
+  margin: 0 10px; 
+}
+
+
+.all_goods{
+  width: 100%;
+  flex: 1;
+}
+
+.all_goods .goods{
+  width: 60%;
+  min-width: 960px;
+  margin: 0 auto;
+}
+
+.goods li{
+  display: inline-block;
+  position: relative;
+  width: 22%;
+  height: 220px; 
+  margin: 6px 1%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
+}
+
+.goods img{
+  height: 100%;
+  width: 100%;
+}
+.goods .title,.goods .price{
+  position: absolute;
+  color: #fff;
+}
+.goods .title{
+  left: 6px;
+  bottom:4px;
+}
+.goods .price{
+  right: 6px;
+  bottom: 4px;
+}
